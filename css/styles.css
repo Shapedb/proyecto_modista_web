@@ -1,3 +1,33 @@
 :root {
-    
+    --color-principal: #1B2430;
+    --color-secundario: #51557E;
+    --blanco: #FFFFFF;
+}
+/*Global*/
+* {
+    margin: 0;
+}
+/*Navegacion Principal*/
+
+.contenedor {
+    margin: 0;
+}
+
+.nav-bg {
+    background-color: var(--color-principal);
+    padding: 1rem;
+}
+
+.navegacion-principal {
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.navegacion-principal a:hover {
+    background-color: var(--color-secundario);
 }
