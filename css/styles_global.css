@@ -1,0 +1,9 @@
+/*Variables*/
+:root {
+    --color-texto-nav: 	#000000;
+}
+
+/*Barra de Navegacion*/
+.color{
+    color: var(--color-texto-nav);
+}
