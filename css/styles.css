@@ -44,12 +44,11 @@ main {
 
 
 /*Modificacion del tamaño de las imagenes y seccion de informacion-(MTISI)*/
-
 .contenedor-imge-p {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
+    display: flex;
 }
+
+
 .imagen-tamaño-principal, p {
     margin: 0.5rem;
 }
@@ -65,13 +64,7 @@ main {
     width: 30rem;
     height: 20rem;
 }
-/*MITSI-Ubicacion Interior*/
-.contenedor-imge-p:nth-child(2) p {
-    grid-column: 1/2;
-}
-.contenedor-imge-p:nth-child(2) img {
-    grid-column: 2/3;
-}
+
 
 /*Footer*/
 footer {
