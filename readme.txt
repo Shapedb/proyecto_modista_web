@@ -10,4 +10,18 @@ En caso de no tener internet par usar boostra usar el siguiente comando:
         <!--JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
 
-/**/
+/*Adaptacion de Pixeles*/
+El siguiente comando crea que todos los "rem" dentro de CSS sean lo siguiente:
+
+1rem = 10px
+
+Este cambiara para adapatarse de mejor manera a diferentes pantallas.
+
+Codigo de CSS:
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+}

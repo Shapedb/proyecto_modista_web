@@ -47,6 +47,9 @@ main {
 .contenedor-imge-p {
     display: flex;
 }
+.contenedor-imge-p2 {
+    flex-direction: row-reverse;
+}
 
 
 .imagen-tamaño-principal, p {

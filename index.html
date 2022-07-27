@@ -3,32 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Cambia la barra de color de los navegadores-->
+        <meta name="theme-color" content="#FFFFFF">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Modista Rochy</title>
+        <title>Modista Rochy</title>}
+        <!--Normalize-->
+        <link rel="stylesheet" href="css/normalize.css">
         <!--Hoja de Estilos Global-->
         <link rel="stylesheet" href="css/styles_global.css">
         <!--Hoja de Estilos Propia-->
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+    <body class="espacio">
         <!--Barra de Nacegacion-->
-        <header class="nav-bg">
-            <div>
-                <nav class="contenedor navegacion-principal">
-                    <a href="#">Inicio</a>
-                    <a href="#">Citas</a>
-                    <a href="#">Pedidos</a>
-                    <a href="#">Nosotros</a>
+        <header>
+            <div class="nav-bg">
+                <nav  class=" flex-nav ">
+                    <div>
+                        <a href="#">Inicio</a>
+                        <a href="#">Citas</a>   
+                        <a href="#">Pedidos</a>
+                        <a href="#">Nosotros</a>
+                    </div>
+                    <div class="pos">
+                        <div>
+                            <a href="">Iniciar Sesion <span>|</span></a>
+                        </div>
+                        <div>
+                            <a href="">Registrarse</a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
+        <script src="javascript/nav-bar.js"></script>
         <!--Imagen continua a la barra de Nacegacion-->
         <div class="imagen-pri">
             <section class="contenido_imagen-pri">
                 <h2>Modista Rochy</h2>
-            </section>
-            
+            </section>   
         </div>
+        
         <!--Contenido Principal-->
         <main class="sombra">
             <section>
@@ -43,7 +58,7 @@
                         </div>
                     </div>
                     <div class="cas">
-                        <div class="contenedor-imge-p">
+                        <div class="contenedor-imge-p contenedor-imge-p2">
                             <img class="imagen-tamaño-principal" src="" alt="">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quam aut quos? Voluptate dolorum, 
                                 placeat illo ullam ad error! Neque obcaecati ducimus eum possimus vero dignissimos dolorum, 

@@ -11,38 +11,53 @@
 * {
     margin: 0;
 }
+html {
+    font-size: 62.5%;
+}
 body {
-    padding-top : 50px;
+    font-size: 16px;
     background-color: var(--fondo);
 }
 /*Navegacion Principal*/
-
-.contenedor {
-    margin: 0;
+.espacio {
+    padding-top : 6rem;
 }
-
-header {
-    background-color: var(--color-nav);
+.nav-bg {
+    background-color: var(--negro);
     width: 100%;
-    padding: 1rem;
+    padding: 3rem;
     margin: 0;
     position: fixed;
     /* z-index me permite sobreponerme al background que se sobrepone*/
     z-index: 1;
     top: 0;
     left: 0;
+    /*Tamaño de la Letra*/
+    font-size: 2rem;
+    /**/
+    transition: all 0.5 ease;
 }
 
-.navegacion-principal {
-    justify-content: space-between;
+.flex-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pos{
+   display: flex;
+   justify-content: end;
+   margin-right: 3.5rem;
+}
+.flex-nav span {
+    margin-left: 0.5rem;
 }
 
-.navegacion-principal a{
+.flex-nav a{
     color: var(--blanco);
+    margin: 0;
     padding: 0.5rem 0.5rem;
     border-radius: 1rem;
     text-decoration: none;
 }
-.navegacion-principal a:hover {
+.flex-nav a:hover {
     background-color: var(--color-secundario);
 }
