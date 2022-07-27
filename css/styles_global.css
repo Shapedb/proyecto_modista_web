@@ -66,6 +66,7 @@ body {
 }
 
 /*Scroll Personalizado*/
+/*Scroll Personalizado (Funciona en Chrome y Opera)*/
 body::-webkit-scrollbar {
     width: 1rem;
 }
@@ -75,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: var(--color-principal);
 }
-
+/*Scroll Personalizado (Funciona en Firefox)*/
 * {
     scrollbar-color: var(--negro) var(--blanco);
     scrollbar-width: auto;
