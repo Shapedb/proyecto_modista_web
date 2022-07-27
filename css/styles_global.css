@@ -77,12 +77,12 @@ body::-webkit-scrollbar-thumb:hover {
     background: var(--color-principal);
 }
 /*Scroll Personalizado (Funciona en Firefox)*/
-* {
-    scrollbar-color: var(--negro) var(--blanco);
+html {
+    scrollbar-color: var(--negro) var(--negro);
     scrollbar-width: auto;
 }
 
-*:hover {
+html:hover {
     scrollbar-color: var(--color-principal) var(--blanco);
     scrollbar-width: auto;
 }
