@@ -83,6 +83,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 *:hover {
-    scrollbar-color: var(--negro) var(--blanco);
+    scrollbar-color: var(--color-principal) var(--blanco);
     scrollbar-width: auto;
 }
