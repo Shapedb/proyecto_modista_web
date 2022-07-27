@@ -22,7 +22,7 @@ body {
 .espacio {
     padding-top : 6rem;
 }
-.nav-bg {
+.nav {
     background-color: var(--negro);
     width: 100%;
     padding: 3rem;
@@ -35,7 +35,10 @@ body {
     /*Tamaño de la Letra*/
     font-size: 2rem;
     /**/
-    transition: all 0.5 ease;
+    transition: all 1s ease;
+}
+.nav.active {
+    background-color: var(--color-nav);
 }
 
 .flex-nav {
@@ -60,4 +63,25 @@ body {
 }
 .flex-nav a:hover {
     background-color: var(--color-secundario);
+}
+
+/*Scroll Personalizado*/
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--negro);
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--color-principal);
+}
+
+* {
+    scrollbar-color: var(--negro) var(--blanco);
+    scrollbar-width: auto;
+}
+
+*:hover {
+    scrollbar-color: var(--negro) var(--blanco);
+    scrollbar-width: auto;
 }

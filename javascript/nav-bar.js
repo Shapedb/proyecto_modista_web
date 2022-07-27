@@ -1,5 +1,6 @@
 /*Animacion de Barra de Navegacion*/
-window.addEventListener("scroll" , function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("abajo",window.scrollY>0)
-})
+const nav = document.querySelector('.nav');
+
+    window.addEventListener ('scroll', function(){
+        nav.classList.toggle('active', window.scrollY >0)
+    })
