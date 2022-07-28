@@ -4,7 +4,7 @@
 .formulario {
 
 }
-
+ 
 
 /*Legends (Titulo del campo del formulario)*/
 .legend {
@@ -17,13 +17,17 @@ y input*/
 .label {
 
 }
+/*Configuracio de los capos de entrada*/
+.contenedor-input {
+
+}
 
 /*Configuracion de las cajas de texto*/
 .Input_T_CajaT {
 
 }
 
-/*Configuracio de los botones*/
-.contenedor-input {
-
+/*Configuracion de los botones*/
+.boton {
+    
 }
