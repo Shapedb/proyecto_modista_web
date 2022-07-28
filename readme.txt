@@ -25,3 +25,15 @@ html {
 body {
     font-size: 16px;
 }
+
+
+===========================================Blioteca de Archivos===============================================
+
+*Detalles pedidos Administrdor {Esta seccion contiene la plantilla para almacenar y consultar los datos
+necesarios para la creacion de la ropa por parte de las mdistas y costureras}
+
+*Index {Contine la imagen principal o contenido siendo lo primero que vera el cliente}
+
+*login {Se encuentra el inicio de sesion de la pagina}
+
+*nosotros {Contien toda la informacion de la empresa}
