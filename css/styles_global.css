@@ -3,9 +3,10 @@
     --color-nav: rgb(0 0 0 / 75%);
     --color-principal: #1B2430;
     --color-secundario:  #ffeace;
-    --fondo:  #fbf2f0 ;
+    --fondo:  #FFFFFF ;
     --blanco: #FFFFFF;
     --negro: #000000;
+    --hover-boton: #ffcd8a;
 }
 /*Global*/
 * {
@@ -97,12 +98,13 @@ html:hover {
     width: 10rem;
     /*Sombra*/
     -webkit-box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
--moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
-box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
+    cursor: pointer;
 }
 
 .boton :hover{
-    
+    background-color: var(--hover-boton);
 }
 
 .Input_T_CajaT {
@@ -112,6 +114,4 @@ box-shadow: 0px 0px 12px -5px rgba(0,0,0,1);
 }
 .label {
     color: #816797;
-    
 }
-
