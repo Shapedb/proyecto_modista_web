@@ -37,3 +37,15 @@ necesarios para la creacion de la ropa por parte de las mdistas y costureras}
 *login {Se encuentra el inicio de sesion de la pagina}
 
 *nosotros {Contien toda la informacion de la empresa}
+
+*register {Almacena el formulario para la creacion de un nuevo Usuario de parte del cliente}
+    DATOS QUE PIDE:
+        *
+
+*pedido-admin {El administrador es el unico que puede realizar un pedido, aqui se contiene el formulario para añadirlo}
+    DATO QUE PIDE:
+        *
+
+*detalle-pedido-administrador {}
+    DATO QUE PIDE:
+        *

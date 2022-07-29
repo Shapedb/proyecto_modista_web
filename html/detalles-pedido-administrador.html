@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!--Hoja de Estilos Global-->
+    <link rel="stylesheet" href="../css/styles_global.css">
     <title>Modista Rochy | Detalle Pedido | Administrador</title>
 </head>
 <body>
@@ -14,7 +18,7 @@
 
     <form class="formulario" action="">
         <fieldset>
-            <legend class="legend">Detalles de la ropa</legend>
+            <legend class="legend">Detalles de la Ropa</legend>
                 <div class="campo-heading">
                     <div class="contenedor-input">
                         <label for="" class="label"></label>
@@ -30,7 +34,7 @@
                     </div>
                 </div>
                 <section class="campo-heading">
-                    <h3>Medidas</h3>
+                    <h3 class="heading-section">Medidas</h3>
                     <div>
                         <ul class="lista">
                             <li class="casilla">
@@ -39,7 +43,14 @@
                                     <input type="text" class="Input_T_Caja" placeholder="">
                                 </div>
                             </li>
+                            <!--Se continuaran las siguiente casillas para crearla.-->
                         </ul>
+                    </div>
+                </section>
+                <section class="campo-heading">
+                    <h3 class="heading-section">Costo</h3>
+                    <div class="contenedor-input">
+                        <input class="Input_T_Caja" type="number">
                     </div>
                 </section>
         </fieldset>
