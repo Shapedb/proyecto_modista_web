@@ -31,6 +31,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
 }
 .contenido_imagen-pri h2 {
     color: var(--blanco);
