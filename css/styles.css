@@ -5,10 +5,10 @@
     --color-nav: rgb(0 0 0 / 75%);
     --color-principal: #1B2430;
     --color-secundario:  #ffeace;
-    --fondo:  #fbf2f0 ;
     --blanco: #FFFFFF;
     --negro: #000000;
 }
+
 /*Imagen del principio y Titulo*/
 .imagen-pri {
     background-image: url(../img/pr.jpg);
@@ -31,7 +31,6 @@
 }
 /*Main*/
 main {
-    background-color: var(--fondo-main);
     margin: 1rem 13rem;
 
 }
@@ -93,4 +92,10 @@ footer {
 }
 footer h3 {
     text-align: center;
+}
+
+/*Alteracion de los iconos*/
+.t-icono {
+    width: 2rem;
+    height: 2rem;
 }
