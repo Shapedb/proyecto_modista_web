@@ -1,2 +1,9 @@
 /*Hoja de Estilos de la Seccion de Registro (Register)*/
-
+:root {
+    --color-nav: rgb(0 0 0 / 75%);
+    --color-principal: #1B2430;
+    --color-secundario:  #ffeace;
+    --fondo:  #fbf2f0 ;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
