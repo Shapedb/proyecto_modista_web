@@ -7,6 +7,7 @@
     --blanco: #FFFFFF;
     --negro: #000000;
     --hover-boton: #ffcd8a;
+    --transparente: rgb(0 0 0 / 0%);
 }
 /*Global*/
 * {
@@ -18,7 +19,27 @@ html {
 body {
     font-size: 16px;
     background-color: var(--fondo);
+    font-family: 'Oxygen', sans-serif;
 }
+
+/*Clases de uso universal*/
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+.modificar-tamaño-p {
+    font-size: ;
+}
+.linea {
+    width: 2rem;
+    color:var(--transparente);
+}
+
 /*Navegacion Principal*/
 .espacio {
     padding-top : 6rem;
@@ -51,6 +72,10 @@ body {
    justify-content: end;
    margin-right: 3.5rem;
 }
+.pos div a {
+    font-size: 2rem;
+}
+
 .flex-nav span {
     margin-left: 0.5rem;
 }
@@ -63,7 +88,7 @@ body {
     text-decoration: none;
 }
 .flex-nav a:hover {
-    background-color: var(--color-secundario);
+    color: var(--blanco);
 }
 
 /*Scroll Personalizado*/
