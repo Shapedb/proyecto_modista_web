@@ -32,13 +32,13 @@ body {
     display: flex;
 }
 
-.modificar-tamaño-p {
+/*.modificar-tamaño-p {
     font-size: ;
 }
 .linea {
     width: 2rem;
     color:var(--transparente);
-}
+}*/
 
 /*Navegacion Principal*/
 .espacio {

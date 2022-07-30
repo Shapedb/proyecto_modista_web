@@ -127,3 +127,9 @@ footer h3 {
 .line {
 
 }
+
+@media (max-width: 480px ){
+    .line {
+        width: 75%;
+    }
+}
