@@ -10,6 +10,7 @@
     --hover-boton: #ffcd8a;
     --transparente: rgb(0 0 0 / 0%);
     --texto-color-nav: #FFB654;
+    --box-dark-grade: rgba(255, 255, 255, 0.7);
 }
 /*Global*/
 * {
@@ -29,9 +30,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
 .flex {
     display: flex;
+    align-items: center;
 }
 .align-center {
     line-height: 3rem;
@@ -40,18 +44,20 @@ body {
 
 /*Navegacion Principal*/
 .icon-nav {
-    background-image: url(../img/icon-temporal.png) ;
     width: 4rem;
     height: 4rem;
+}
+.font-icon {
+    background-color: var(--box-dark-grade);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
 }
 
 .color-nav a{
     color: var(--texto-color-nav);
 }
 
-.espacio {
-    padding-top : 6rem;
-}
 .nav {
     background-color: var(--nav-base);
     width: 100%;
@@ -66,6 +72,8 @@ body {
     font-size: 2rem;
     /**/
     transition: all 1s ease;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .flex-nav {
