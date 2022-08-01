@@ -6,12 +6,11 @@
     --color-secundario:  #ffeace;
     --blanco: #FFFFFF;
     --negro: #000000;
-    --fondo-main: #F2CBC2;
     
 }
 /*Clases de uso universal*/
 
-body {
+.fondo_de_pagina {
     background-color: var(--fondo-main);
 }
 
@@ -43,7 +42,7 @@ body {
     font-family: 'Square Peg', cursive;
 }
 /*Main*/
-main {
+.main {
     margin: 3rem 6rem;
 
 }

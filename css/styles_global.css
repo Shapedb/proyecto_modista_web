@@ -1,15 +1,16 @@
 /*Variables*/
 :root {
-    --color-nav: rgb(82 59 45 / 75%);
-    --color-principal: #1B2430;
-    --color-secundario:  #ffeace;
-    --fondo:  #FEEBE9 ;
+    /*Variables mas usadas*/
+    --color-nav: rgb(8 30 38 / 75%);
+    --fondo:  #FEEBE9;
+    --fondp-pagina: #EED180;
+    --nav-base:  #0b0c0d;
     --blanco: #FFFFFF;
     --negro: #000000;
-    --nav-base: #7D5640;
     --hover-boton: #ffcd8a;
+    /*Prrpiedad de la barra de naecgacion*/
     --transparente: rgb(0 0 0 / 0%);
-    --texto-color-nav: #FFB654;
+    --texto-color-nav: #FCE2DB;
     --box-dark-grade: rgba(255, 255, 255, 0.7);
 }
 /*Global*/
@@ -21,7 +22,7 @@ html {
 }
 body {
     font-size: 16px;
-    background-color: var(--fondo);
+    background-color: var(--fondp-pagina);
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -61,7 +62,7 @@ body {
 .nav {
     background-color: var(--nav-base);
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
     position: fixed;
     /* z-index me permite sobreponerme al background que se sobrepone*/
@@ -69,7 +70,7 @@ body {
     top: 0;
     left: 0;
     /*Tamaño de la Letra*/
-    font-size: 2rem;
+    font-size: 1.6rem;
     /**/
     transition: all 1s ease;
     border-bottom-left-radius: 2rem;
@@ -87,7 +88,7 @@ body {
    margin-right: 3.5rem;
 }
 .pos div a {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .flex-nav span {
