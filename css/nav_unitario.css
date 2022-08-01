@@ -45,4 +45,11 @@
     border-radius: 1rem;
     padding: 5rem;
     background-color: var(--blanco);
+    list-style: none;
+}
+
+/*fielset*/
+.fieldset {
+    border: none;
+    text-transform: uppercase;
 }
