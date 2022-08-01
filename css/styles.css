@@ -94,7 +94,7 @@
 
 
 /*Footer*/
-footer {
+.footer {
     background-color: var(--blanco);
     margin: 0;
     width: 100%;
@@ -102,7 +102,7 @@ footer {
     top: 100;
     padding: 0.5rem 0rem;
 }
-footer h3 {
+.footer h3 {
     text-align: center;
 }
 
