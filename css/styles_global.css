@@ -151,7 +151,7 @@ html:hover {
 .Input_T_CajaT {
     padding: 0.5rem;
     margin: 00.5rem;
-    border-style: none;
+    border-radius: 0.5rem;
 }
 .label {
     color: #816797;
