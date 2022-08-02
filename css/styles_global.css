@@ -147,9 +147,6 @@ html:hover {
     cursor: pointer;
 }
 
-.boton :hover{
-    background-color: var(--hover-boton);
-}
 
 .Input_T_CajaT {
     padding: 0.5rem;
