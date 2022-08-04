@@ -1,6 +1,6 @@
 /*Hoja de Estilos de la Seccion de Registro (Register)*/
 :root {
-    --nav-base:  #51557E;
+    --nav-base:  #0b0c0d;
 }
 
 /*Variables universales (Registar)*/
@@ -14,11 +14,20 @@
 .nav-line {
     background-color: var(--nav-base);
     width: 100%;
-    height: 6rem;
+    height: 5rem;
+    padding: 1rem;
     position: fixed;
     z-index: 1;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+}
+
+.empress-2 {
+    padding: 1rem;
+    font-size: 4rem;
+    font-family: 'Square Peg', cursive;
+    text-decoration: none;
+    
 }
 
 /*Input*/

@@ -58,6 +58,7 @@ body {
     margin: 0 0.5rem;
     font-size: 3rem;
     font-family: 'Square Peg', cursive;
+    
 }
 .color-nav a{
     color: var(--texto-color-nav);
