@@ -57,3 +57,7 @@ main {
 .scrollarea {
   overflow-y: auto;
 }
+
+#body svg {
+  fill: white !important;
+}
