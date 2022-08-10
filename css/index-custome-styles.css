@@ -1,12 +1,13 @@
 /* Index Custome Styles*/
 /*Root(Variables Disponibles)*/
 :root {
-  --nav-font: #0b0c0d;
-  --hover-boton: #ffecd3;
-  --blanco: #FFFFFF;
+  --bg-nav-nar: #4F0909;
+  --bg-subvar: #511909;
+  --bg-user-option: #5E1D0A;
+  --bg-hover-subnar: #FF8661;
+  --blanco: #fff;
   --resaltar: #F27F3D;
 }
-
 /* Padding below the footer and lighter body text */
 
 body {
@@ -19,7 +20,7 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 #body .bg-dark{
-  background-color: var(--nav-font) !important;
+  background-color: var(--bg-nav-nar) !important;
 }
 
 #body a{
@@ -106,7 +107,7 @@ body {
 /*Botones*/
 
 #body .btn-primary {
-  background-color: var(--hover-boton);
+  background-color: var(--bg-hover-subnar);
   color: black;
   
 }

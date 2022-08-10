@@ -1,3 +1,10 @@
+:root {
+  --bg-nav-nar: #4F0909;
+  --bg-subvar: #511909;
+  --bg-user-option: #5E1D0A;
+  --bg-hover-subnar: #FF8661;
+}
+
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -62,3 +69,36 @@ main {
   fill: white !important;
 }
 
+/*Modificar el Tamaño de la varra desplegable
+-----------------------------------------------------------*/
+
+#body .offcanvas-end {
+  width: 20rem;
+}
+
+/*Fondo 
+-----------------------------------------------------------*/
+#body .bg-dark {
+  background-color: var(--bg-nav-nar) !important;
+}
+
+#body .offcanvas {
+  background-color: var(--bg-subvar) !important;
+
+}
+
+#body .dropdown-menu-dark{
+  background-color: var(--bg-user-option) !important;
+}
+
+#body .nav-link:hover {
+  background-color: var(--bg-hover-subnar);
+}
+
+/*Fuente del Texto
+---------------------------------------------------------*/
+#body .navbar-brand {
+  font-family: 'Square Peg', cursive !important;
+  letter-spacing: 0.1rem !important;
+  font-weight: bold;
+}

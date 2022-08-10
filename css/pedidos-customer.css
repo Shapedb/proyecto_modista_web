@@ -1,0 +1,6 @@
+
+/*Tamaño del Menu de Ejemplos
+----------------------------------------------------------*/
+#body .dropdown-menu, d-flex{
+    width: 40rem !important;
+}
