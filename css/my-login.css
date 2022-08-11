@@ -1,9 +1,20 @@
+/*Root(Variables Disponibles)*/
+:root {
+  --bg-nav-nar: #4F0909;
+  --bg-subvar: #511909;
+  --bg-user-option: #5E1D0A;
+  --bg-hover-subnar: #FF8661;
+  --bg-login: #ffc8b7;
+  --blanco: #fff;
+  --resaltar: #F27F3D;
+}
+
 html,body {
 	height: 100%;
 }
 
 body.my-login-page {
-	background-color: #f7f9fb;
+	background-color: var(--bg-user-option);
 	font-size: 14px;
 }
 
@@ -28,7 +39,7 @@ body.my-login-page {
 
 .my-login-page .card {
 	border-color: transparent;
-	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	background-color: var(--bg-login);
 }
 
 .my-login-page .card.fat {
