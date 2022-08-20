@@ -1,4 +1,4 @@
-/*Boostrap*/
+===========================================Libreria de Boostrap===============================================
 
 En caso de no tener internet par usar boostra usar el siguiente comando:
  
@@ -10,42 +10,7 @@ En caso de no tener internet par usar boostra usar el siguiente comando:
         <!--JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
 
-/*Adaptacion de Pixeles*/
-El siguiente comando crea que todos los "rem" dentro de CSS sean lo siguiente:
-
-1rem = 10px
-
-Este cambiara para adapatarse de mejor manera a diferentes pantallas.
-
-Codigo de CSS:
-
-html {
-    font-size: 62.5%;
-}
-body {
-    font-size: 16px;
-}
-
-
 ===========================================Blioteca de Archivos===============================================
 
-*Detalles pedidos Administrdor {Esta seccion contiene la plantilla para almacenar y consultar los datos
-necesarios para la creacion de la ropa por parte de las mdistas y costureras}
-
-*Index {Contine la imagen principal o contenido siendo lo primero que vera el cliente}
-
-*login {Se encuentra el inicio de sesion de la pagina}
-
-*nosotros {Contien toda la informacion de la empresa}
-
-*register {Almacena el formulario para la creacion de un nuevo Usuario de parte del cliente}
-    DATOS QUE PIDE:
-        *
-
-*pedido-admin {El administrador es el unico que puede realizar un pedido, aqui se contiene el formulario para añadirlo}
-    DATO QUE PIDE:
-        *
-
-*detalle-pedido-administrador {}
-    DATO QUE PIDE:
-        *
+===========================================Base de datos===============================================
+Todos los archivos sobre la base de datos se encontraran en una capeta aparte.
