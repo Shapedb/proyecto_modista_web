@@ -126,6 +126,14 @@
                       </a>
                     </li>
                     <hr>
+                    <h1 class="fs-5">Ropa</h1>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        Editar / Agregar Estilos
+                      </a>
+                    </li>
+                    <hr>
                     <h1 class="fs-5">Usuarios</h1>
                     <li>
                       <a href="#" class="nav-link text-white">
@@ -142,7 +150,7 @@
                   </ul>
                   <hr>
                   <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
                       <strong>Name</strong>
                     </a>

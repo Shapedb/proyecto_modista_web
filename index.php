@@ -17,34 +17,9 @@
     <title>Modista Rochy | Inicio</title>
 </head>
 <body id="body">
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Modista Rochy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="citas-customer.html">Citas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pedidos-customer.html">Pedidos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
-                </li>
-              </ul>
-              <div class="col-md-3 text-end">
-                <a class="btn btn-primary border-0 me-2" href="html/login.html">Iniciar Sesión</a>
-                <a class="btn btn-primary border-info" hre="">Registrarse</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-      
+    
+      <?php include('layout/header-customer.php') ?>
+
       <main>
         <!--Imagin Principal del Archivo-->
         <div class="imagen-pri sombra">
