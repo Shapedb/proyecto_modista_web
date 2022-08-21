@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/my-login.css">
 </head>
 <body class="my-login-page">
-	<?php include('header-l-t.php') ?>
+	<?php include('header-l-t.php') ?>	
 	<section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-md-center h-100">

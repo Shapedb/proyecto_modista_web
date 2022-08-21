@@ -12,10 +12,13 @@
     <!--CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--Hoja de Estilo de Idex-Custome-->
-    <link rel="stylesheet" href="css/index-custome-styles.css">
+    <link rel="stylesheet" href="../css/index-custome-styles.css">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.php">Modista Rochy</a>

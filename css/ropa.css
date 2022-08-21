@@ -1,0 +1,9 @@
+
+#body {
+    margin: 8rem !important;
+}
+@media (max-width: 768px){
+    #body {
+        margin: 1rem !important;
+    }
+}
