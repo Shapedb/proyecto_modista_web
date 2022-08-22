@@ -80,7 +80,7 @@
 
       <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand fs-4" href="index-custome.html">Modista Rochy</a>
+          <a class="navbar-brand fs-4" href="principal.php">Modista Rochy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -142,7 +142,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="administarar-usuarios.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                         Administrar Usuarios
                       </a>
