@@ -26,18 +26,37 @@
         </form>
 
         <hr>
-
-        <table class="table">
+        <div class="d-flex justify-content-center">
+        <table class="table w-75">
             <thead>
                 <tr>
-                    <th scope="col">1</th>
-                    <th scope="col">First</th>
+                    <th scope="col">Clave</th>
+                    <th scope="col">Tipo de Ropa</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
             <tbody>
+                <?php
+                    $inc = include('../php/database/conexion.php');
+                    $sql = "SELECT * FROM `tipo_ropa`";
+                    $resul = mysqli_query($conexion,$sql);
+
+                    while ($mostrar = mysqli_fetch_array($resul)) {
+                    
+                   
+                ?>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <td><?php echo $mostrar['CVE_TIPO_ROPA'] ?></td>
+                    <td><?php echo $mostrar['NOMBRE'] ?></td>
+                    <td>
+                        <input class="btn btn-outline-successy" type="submit" value="Editar">
+                        <input class="btn btn-outline-danger" type="reset" value="Eliminar">
+                    </td>
                 </tr>
+                <?php
+                    }
+                ?>
+        </div>
+        
 </body>
 </html>

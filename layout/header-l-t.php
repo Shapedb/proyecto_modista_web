@@ -21,7 +21,7 @@
 <body id="body">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.php">Modista Rochy</a>
+            <a class="navbar-brand" href="../proyecto_modista_web/index.php">Modista Rochy</a>
         </div>
     </nav>
 </body>

@@ -2,8 +2,13 @@
 #body {
     margin: 8rem !important;
 }
+
+
 @media (max-width: 768px){
     #body {
-        margin: 1rem !important;
+        margin: 7rem 1rem !important;
+    }
+    #body .w-75 {
+        width: auto !important;
     }
 }

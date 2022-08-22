@@ -92,7 +92,7 @@
             <div class="offcanvas-body">
                   <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                      <a href="#" class="nav-link text-white" aria-current="page">
+                      <a href="principal.php" class="nav-link text-white" aria-current="page">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
                         Principal
                       </a>
@@ -128,7 +128,7 @@
                     <hr>
                     <h1 class="fs-5">Ropa</h1>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="ropa.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                         Editar / Agregar Estilos
                       </a>
