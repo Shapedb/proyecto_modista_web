@@ -49,7 +49,7 @@
                     <td><?php echo $mostrar['CVE_TIPO_ROPA'] ?></td>
                     <td><?php echo $mostrar['NOMBRE'] ?></td>
                     <td>
-                        <input class="btn btn-outline-successy" type="submit" value="Editar">
+                        <input class="btn btn-outline-success" type="submit" value="Editar">
                         <input class="btn btn-outline-danger" type="reset" value="Eliminar">
                     </td>
                 </tr>
