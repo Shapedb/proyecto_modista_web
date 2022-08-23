@@ -61,8 +61,8 @@
                 <div class="col-lg-6">
                     <div class="input-group mb-3">
                     <label class="input-group-text" for="inputGroupSelect01">Tipo de Empleado </label>
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Elige una Categoria...</option>
+                    <select class="form-select" id="inputGroupSelect01" name="txtTipoEm">
+                        
                         <?php
                             $inc = include('../php/database/conexion.php');
                             $sql ='SELECT * FROM `tipo_empleado`';
@@ -97,8 +97,8 @@
                 <div class="col-lg-6">
                     <div class="input-group mb-3">
                     <label class="input-group-text" for="inputGroupSelect01">Tipo de Usuario </label>
-                    <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Elige un tipo...</option>
+                    <select class="form-select" id="inputGroupSelect01" name="txtTiUsu">
+                        
                         <?php
                             $inc = include('../php/database/conexion.php');
                             $sql ='SELECT * FROM `tipo_usuario`';
