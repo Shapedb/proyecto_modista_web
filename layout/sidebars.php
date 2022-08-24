@@ -100,7 +100,7 @@
                     <hr>
                     <h1 class="fs-5">Pedidos</h1>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="crear_pedido.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                         Crear Pedido
                       </a>
@@ -126,14 +126,6 @@
                       </a>
                     </li>
                     <hr>
-                    <h1 class="fs-5">Ropa</h1>
-                    <li>
-                      <a href="ropa.php" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                        Editar / Agregar Estilos
-                      </a>
-                    </li>
-                    <hr>
                     <h1 class="fs-5">Usuarios</h1>
                     <li>
                       <a href="crear-usuarios.php" class="nav-link text-white">
@@ -145,6 +137,14 @@
                       <a href="administarar-usuarios.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
                         Administrar Usuarios
+                      </a>
+                    </li>
+                    <hr>
+                    <h1 class="fs-5">Otros...</h1>
+                    <li>
+                      <a href="ropa.php" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        Editar / Agregar Estilos
                       </a>
                     </li>
                   </ul>
