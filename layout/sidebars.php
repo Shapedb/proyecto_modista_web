@@ -108,7 +108,7 @@
                     <li>
                       <a href="#" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                        Editar Pedido
+                        Listado Pedidos
                       </a>
                     </li>
                     <hr>
@@ -122,7 +122,7 @@
                     <li>
                       <a href="#" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                        Editar Citas
+                        Listado Citas
                       </a>
                     </li>
                     <hr>

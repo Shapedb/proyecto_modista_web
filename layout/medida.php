@@ -124,12 +124,13 @@
                          <th scope="col">Medida</th>
                          <th scope="col">Ropa</th>
                          <th scope="col">Acciones</th>
+                         <th></th>
                      </tr>
                 </thead>
                 <tbody>
                      <?php
                          $inc = include('../php/database/conexion.php');
-                         $sql = "SELECT tp.NOMBRE as N, m.MEDIDA as M FROM `tipo_medida` as tm, `tipo_ropa` as tp, `medidas` as m WHERE tm.CVE_MEDIDA = m.CVE_MEDIDA AND tm.CVE_TIPO_ROPA = tp.CVE_TIPO_ROPA;";
+                         $sql = "SELECT tp.NOMBRE as N, tp.CVE_TIPO_ROPA as TP, m.MEDIDA as M, m.CVE_MEDIDA as ME FROM `tipo_medida` as tm, `tipo_ropa` as tp, `medidas` as m WHERE tm.CVE_MEDIDA = m.CVE_MEDIDA AND tm.CVE_TIPO_ROPA = tp.CVE_TIPO_ROPA ORDER BY tp.CVE_TIPO_ROPA;";
                          $resul = mysqli_query($conexion,$sql);
 
                          while ($mostrar = mysqli_fetch_array($resul)) {
@@ -139,9 +140,14 @@
                      <tr>
                          <td><?php echo $mostrar['N'] ?></td>
                          <td><?php echo $mostrar['M'] ?></td>
+                         <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
                          <td>
-                                 <input class="btn btn-outline-success" type="submit" value="Editar">
-                                 <input class="btn btn-outline-danger" type="reset" value="Eliminar">
+                                 
+                                 <form action="../php/eliminar/tipo_ropa.php" method="POST">
+                                    <input type="hidden" value="<?php echo $mostrar['TP'] ?>" name="txtIDER"readonly>
+                                    <input type="hidden" value="<?php echo $mostrar['ME'] ?>" name="txtIDEM"readonly>
+                                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                                 </form>
                          </td>
                      </tr>
                      <?php
