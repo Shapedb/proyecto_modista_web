@@ -30,12 +30,13 @@
                     <th scope="col">Usuario</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Contraseña</th>
+                    <th scope="col">Eliminar</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                     $inc = include('../php/database/conexion.php');
-                    $sql = "SELECT p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO";
+                    $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND U.CVE_USUARIO != 0";
                     $resul = mysqli_query($conexion,$sql);
 
                     while ($mostrar = mysqli_fetch_array($resul)) {
@@ -49,6 +50,13 @@
                     <td><?php echo $mostrar['USUARIO'] ?></td>
                     <td><?php echo $mostrar['TIPO'] ?></td>
                     <td><?php echo $mostrar['CONTRASENA'] ?></td>
+                    <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+                        <td>
+                                 <form action="../php/eliminar/usuario.php" method="POST">
+                                    <input type="hidden" value="<?php echo $mostrar['CVE_USUARIO']?>" name="txtIDEM"readonly>
+                                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                                 </form>
+                        </td>
                 </tr>
                 <?php
                     }
