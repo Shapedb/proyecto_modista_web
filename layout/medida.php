@@ -61,17 +61,18 @@
         <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
         <hr>
         <div class="mt-5">
-            <form action="../php/medida/registro-medida-ropa.php" method="POST">
-            <div class="row">
+            <div>
+                <form action="../php/medida/registro-medida-ropa.php" method="POST">
+                <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <div class="input-group mb-4">
-                    <label class="input-group-text" for="inputGroupSelect01">Ropa </label>
-                    <select class="form-select" id="inputGroupSelect01" name="txtRopa">
-                    <option selected>Escoge un tipo de ropa...</option>
+                    <label class="input-group-text" for="inputGroupSelect01">Tipo de Ropa </label>
+                    <select class="form-select" id="inputGroupSelect01" name="txtRopaM">
+                        
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql ='SELECT * FROM `tipo_ropa`';
+                            $sql ='SELECT * FROM `tipo_ropa` ';
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
@@ -86,9 +87,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="input-group mb-4">
-                    <label class="input-group-text" for="inputGroupSelect01">Medida </label>
-                    <select class="form-select" id="inputGroupSelect01" name="txtMedida">
-                        <option selected>Escoge una medida...</option>
+                    <label class="input-group-text" for="inputGroupSelect01">Medida. </label>
+                    <select class="form-select" id="inputGroupSelect01" name="txtEm">
+                        
                         <?php
                             $inc = include('../php/database/conexion.php');
                             $sql = "SELECT * FROM `medidas`";
@@ -105,7 +106,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-5"></div>
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-1 mb-3">
                         <button type="submit" class="btn btn-outline-success">Agregar</button>
                     </div>
@@ -113,8 +114,9 @@
                         <button type="reset" class="btn btn-outline-danger">Cancelar</button>
                     </div>
                 </div>
+        </div>
+                </form>
             </div>
-            </form>
             <div class="d-flex justify-content-center">
             <table class="table w-75">
                 <thead>
@@ -127,7 +129,7 @@
                 <tbody>
                      <?php
                          $inc = include('../php/database/conexion.php');
-                         $sql = "SELECT TP.NOMBRE as ROPA, m.MEDIDA as MEDIDA FROM `tipo_medida` as tm, `tipo_ropa` as tp, `medidas` as m WHERE m.CVE_MEDIDA = tm.CVE_MEDIDA AND tp.CVE_TIPO_ROPA = tm.CVE_MEDIDA;";
+                         $sql = "SELECT tp.NOMBRE as N, m.MEDIDA as M FROM `tipo_medida` as tm, `tipo_ropa` as tp, `medidas` as m WHERE tm.CVE_MEDIDA = m.CVE_MEDIDA AND tm.CVE_TIPO_ROPA = tp.CVE_TIPO_ROPA;";
                          $resul = mysqli_query($conexion,$sql);
 
                          while ($mostrar = mysqli_fetch_array($resul)) {
@@ -135,8 +137,8 @@
                      
                      ?>
                      <tr>
-                         <td><?php echo $mostrar['ROPA'] ?></td>
-                         <td><?php echo $mostrar['MEDIDA'] ?></td>
+                         <td><?php echo $mostrar['N'] ?></td>
+                         <td><?php echo $mostrar['M'] ?></td>
                          <td>
                                  <input class="btn btn-outline-success" type="submit" value="Editar">
                                  <input class="btn btn-outline-danger" type="reset" value="Eliminar">
