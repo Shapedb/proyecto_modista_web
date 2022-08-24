@@ -20,7 +20,7 @@ VALUES ('$idTela','$nomTela')";
 $resultado=mysqli_query($conexion,$consulta);
 if ($resultado) {
     echo " <script> alert('Se ha añadido la tela con exito.'); 
-    window.location='../layout/ropa.php' </script>";
+    window.location='../layout/tela.php' </script>";
 }
 
 

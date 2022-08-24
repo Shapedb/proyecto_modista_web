@@ -39,7 +39,7 @@
                 <tbody>
                      <?php
                          $inc = include('../php/database/conexion.php');
-                         $sql = "SELECT * FROM `medidas`";
+                         $sql = "SELECT * FROM `medidas` WHERE CVE_MEDIDA != 0";
                          $resul = mysqli_query($conexion,$sql);
 
                          while ($mostrar = mysqli_fetch_array($resul)) {
@@ -76,7 +76,7 @@
                         
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql ='SELECT * FROM `tipo_ropa` ';
+                            $sql ='SELECT * FROM `tipo_ropa` WHERE CVE_TIPO_ROPA != 0';
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
@@ -96,7 +96,7 @@
                         
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql = "SELECT * FROM `medidas`";
+                            $sql = "SELECT * FROM `medidas` WHERE CVE_MEDIDA != 0";
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
