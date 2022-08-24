@@ -32,7 +32,7 @@
             <table class="table w-75">
                 <thead>
                      <tr>
-                         <th scope="col">Tipo de Ropa</th>
+                         <th scope="col">Tipo de Tela</th>
                          <th scope="col">Acciones</th>
                      </tr>
                 </thead>
@@ -60,46 +60,5 @@
             </table>
         </div>
         <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
-        <div class="mt-5">
-            <form action="../php/registro-tela.php" method="POST">
-                <div class="input-group">
-                    <span class="input-group-text">First and last name</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
-                </div>
-            </form>
-
-            <hr>
-            <div class="d-flex justify-content-center">
-            <table class="table w-75">
-                <thead>
-                     <tr>
-                         <th scope="col">Tipo de Ropa</th>
-                         <th scope="col">Acciones</th>
-                     </tr>
-                </thead>
-                <tbody>
-                     <?php
-                         $inc = include('../php/database/conexion.php');
-                         $sql = "SELECT * FROM `tipo_de_tela` ";
-                         $resul = mysqli_query($conexion,$sql);
-
-                         while ($mostrar = mysqli_fetch_array($resul)) {
-                     
-                     
-                     ?>
-                     <tr>
-                         <td><?php echo $mostrar['TIPO_TELA'] ?></td>
-                         <td>
-                                 <input class="btn btn-outline-success" type="submit" value="Editar">
-                                 <input class="btn btn-outline-danger" type="reset" value="Eliminar">
-                         </td>
-                     </tr>
-                     <?php
-                         }
-                     ?>
-                </tbody>
-            </table>
-        </div>
 </body>
 </html>
