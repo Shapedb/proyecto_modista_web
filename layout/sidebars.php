@@ -144,7 +144,19 @@
                     <li>
                       <a href="ropa.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                        Editar / Agregar Estilos
+                        Editar / Agregar Ropa
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tela.php" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        Editar / Agregar Tela
+                      </a>
+                    </li>
+                    <li>
+                      <a href="medida.php" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        Editar / Agregar Medida
                       </a>
                     </li>
                   </ul>

@@ -22,7 +22,7 @@
         </div>
     </div>
     
-    <form>
+    <form action="../php/registro-Pedido.php" method="POST">
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
@@ -33,7 +33,7 @@
             </div>
 
         </div>
-        <div class="row" action="../php/registro-UE.php" method="POST">
+        <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <div class="input-group mb-4">
@@ -42,12 +42,12 @@
                         
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql ='SELECT * FROM `tipo_empleado`';
+                            $sql ='SELECT * FROM `tipo_ropa`';
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
                         ?>
-                            <option value="<?php echo $mostrar['CVE_TIP_EMPLEADO'] ?>"><?php echo $mostrar['NOMBRE'] ?></option>
+                            <option value="<?php echo $mostrar['CVE_TIPO_ROPA'] ?>"><?php echo $mostrar['NOMBRE'] ?></option>
                     
                         <?php
                             }
@@ -62,12 +62,12 @@
                         
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql ='SELECT * FROM `tipo_empleado`';
+                            $sql ='SELECT * FROM `tipo_de_tela`';
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
                         ?>
-                            <option value="<?php echo $mostrar['CVE_TIP_EMPLEADO'] ?>"><?php echo $mostrar['NOMBRE'] ?></option>
+                            <option value="<?php echo $mostrar['CVE_TIPO_TELA'] ?>"><?php echo $mostrar['TIPO_TELA'] ?></option>
                     
                         <?php
                             }
@@ -102,12 +102,12 @@
                         
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql ='SELECT * FROM `tipo_empleado`';
+                            $sql ='SELECT * FROM `estado_pedido`';
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
                         ?>
-                            <option value="<?php echo $mostrar['CVE_TIP_EMPLEADO'] ?>"><?php echo $mostrar['NOMBRE'] ?></option>
+                            <option value="<?php echo $mostrar['CVE_ESTADO_PEDIDO'] ?>"><?php echo $mostrar['NOMBRE'] ?></option>
                     
                         <?php
                             }
@@ -122,12 +122,12 @@
                         
                         <?php
                             $inc = include('../php/database/conexion.php');
-                            $sql ='SELECT * FROM `tipo_empleado`';
+                            $sql = "SELECT E.CVE_EMPLEADO AS ID, P.NOMBRE AS NOMBRE_C FROM `empleado` AS E, `tipo_empleado` as TE, `personas` AS P WHERE E.CVE_TIP_EMPLEADO = TE.CVE_TIP_EMPLEADO AND P.CVE_PERSONA = E.CVE_EMPLEADO AND TE.CVE_TIP_EMPLEADO = 2;";
                             $consul = mysqli_query($conexion,$sql);
                             while ($mostrar = mysqli_fetch_array($consul)) {
 
                         ?>
-                            <option value="<?php echo $mostrar['CVE_TIP_EMPLEADO'] ?>"><?php echo $mostrar['NOMBRE'] ?></option>
+                            <option value="<?php echo $mostrar['ID'] ?>"><?php echo $mostrar['NOMBRE_C'] ?></option>
                     
                         <?php
                             }
