@@ -39,7 +39,7 @@
                 <tbody>
                      <?php
                          $inc = include('../php/database/conexion.php');
-                         $sql = "SELECT * FROM `tipo_de_tela` ";
+                         $sql = "SELECT * FROM `tipo_de_tela` WHERE CVE_TIPO_TELA != 0";
                          $resul = mysqli_query($conexion,$sql);
 
                          while ($mostrar = mysqli_fetch_array($resul)) {
@@ -47,11 +47,14 @@
                      
                      ?>
                      <tr>
-                         <td><?php echo $mostrar['TIPO_TELA'] ?></td>
-                         <td>
-                                 <input class="btn btn-outline-success" type="submit" value="Editar">
-                                 <input class="btn btn-outline-danger" type="reset" value="Eliminar">
-                         </td>
+                        <td><?php echo $mostrar['TIPO_TELA'] ?></td>
+                        <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+                        <td>
+                                 <form action="../php/eliminar/tela.php" method="POST">
+                                    <input type="hidden" value="<?php echo $mostrar['CVE_TIPO_TELA'] ?>" name="txtIM"readonly>
+                                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                                 </form>
+                        </td>
                      </tr>
                      <?php
                          }

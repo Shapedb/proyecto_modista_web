@@ -51,7 +51,7 @@
                         <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
                         <td>
                                  <form action="../php/eliminar/medida.php" method="POST">
-                                    <input type="TEXT" value="<?php echo $mostrar['CVE_MEDIDA'] ?>" name="txtIDEM"readonly>
+                                    <input type="hidden" value="<?php echo $mostrar['CVE_MEDIDA'] ?>" name="txtIDEM"readonly>
                                     <button type="submit" class="btn btn-outline-danger">Eliminar</button>
                                  </form>
                         </td>

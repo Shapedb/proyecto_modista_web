@@ -32,12 +32,13 @@
                      <tr>
                          <th scope="col">Tipo de Ropa</th>
                          <th scope="col">Acciones</th>
+                         <th scope="col"></th>
                      </tr>
                 </thead>
                 <tbody>
                      <?php
                          $inc = include('../php/database/conexion.php');
-                         $sql = "SELECT * FROM `tipo_ropa` ORDER BY CVE_TIPO_ROPA DESC ";
+                         $sql = "SELECT * FROM `tipo_ropa` WHERE CVE_TIPO_ROPA != 0 ORDER BY CVE_TIPO_ROPA; ";
                          $resul = mysqli_query($conexion,$sql);
 
                          while ($mostrar = mysqli_fetch_array($resul)) {
@@ -46,10 +47,13 @@
                      ?>
                      <tr>
                          <td><?php echo $mostrar['NOMBRE'] ?></td>
-                         <td>
-                                 <input class="btn btn-outline-success" type="submit" value="Editar">
-                                 <input class="btn btn-outline-danger" type="reset" value="Eliminar">
-                         </td>
+                         <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+                        <td>
+                                 <form action="../php/eliminar/ropa.php" method="POST">
+                                    <input type="hidden" value="<?php echo $mostrar['CVE_TIPO_ROPA'] ?>" name="txtIM"readonly>
+                                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                                 </form>
+                        </td>
                      </tr>
                      <?php
                          }
