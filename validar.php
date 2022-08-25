@@ -1,7 +1,10 @@
 <?php
+
+include('php/database/conexion.php');
+
 $usuario=$_POST['usuario'];
 $contraseña=$_POST['password'];
-session_start();
+
 $_SESSION['usuario']=$usuario;
 
 $conexion=mysqli_connect("localhost","root","12345678","login");
@@ -24,3 +27,5 @@ if($filas){
 }
 mysqli_free_result($resultado);
 mysqli_close($conexion);
+
+?>
