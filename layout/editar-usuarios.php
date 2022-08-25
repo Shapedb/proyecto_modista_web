@@ -22,13 +22,14 @@
         <?php
             $inc = include('../php/database/conexion.php');
             $ido = $_GET["id"];
-            $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = 3;";
+            $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = '$ido';";
             $consul = mysqli_query($conexion,$sql);
             $mostrar = mysqli_fetch_array($consul)
 
         ?>
         <hr>
-        <form action="../php/registro-UE.php" method="POST">
+        <form action="../php/actualizar/actualizar-UE.php" method="POST">   
+            <input type="hidden" value="<?php echo $mostrar['CVE_USUARIO']?>" name="txtIDEM"readonly>
             <h5>Datos Personales</h5>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Nombre</span>
@@ -89,7 +90,7 @@
                 <?php
                     $inc = include('../php/database/conexion.php');
                     $ido = $_GET["id"];
-                    $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = 3;";
+                    $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = '$ido';";
                     $consul = mysqli_query($conexion,$sql);
                     $mostrar = mysqli_fetch_array($consul)
 
@@ -106,7 +107,7 @@
             <?php
                 $inc = include('../php/database/conexion.php');
                 $ido = $_GET["id"];
-                $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = 3;";
+                $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = '$ido';";
                 $consul = mysqli_query($conexion,$sql);
                 $mostrar = mysqli_fetch_array($consul)
 
@@ -142,7 +143,7 @@
             <?php
                 $inc = include('../php/database/conexion.php');
                 $ido = $_GET["id"];
-                $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = 3;";
+                $sql = "SELECT u.CVE_USUARIO ,p.NOMBRE, p.APELLIDO_PAT,p.APELLIDO_MAT,u.USUARIO,tu.TIPO ,u.CONTRASENA, p.CORREO_ELECTRONICO, p.TELEFONO, e.CURP FROM `usuario` as u, `tipo_usuario` as tu, `personas` as p, `empleado` as e WHERE P.CVE_PERSONA = U.CVE_USUARIO and u.CVE_TIPO_USUARIO = tu.CVE_TIPO_USUARIO AND e.CVE_EMPLEADO = p.CVE_PERSONA AND U.CVE_USUARIO = '$ido';";
                 $consul = mysqli_query($conexion,$sql);
                 $mostrar = mysqli_fetch_array($consul)
 
