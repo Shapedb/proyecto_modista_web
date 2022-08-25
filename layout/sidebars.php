@@ -123,6 +123,7 @@
                     </li>
                     <hr>
                     <h1 class="fs-5">Usuarios</h1>
+
                     <li>
                       <a href="crear-usuarios.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
