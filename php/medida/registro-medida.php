@@ -22,7 +22,7 @@ $consulta_1 = "INSERT INTO `medidas`(`CVE_MEDIDA`, `MEDIDA`) VALUES ('$idMedida'
 $resultado2 = mysqli_query($conexion,$consulta_1);
 
 if ($resultado2) {
-    echo " <script> alert('Se ha añadido al Usuario con exito.'); 
+    echo " <script> alert('Se ha añadido la medida con exito.'); 
     window.location='../../layout/medida.php' </script>";
 }
 

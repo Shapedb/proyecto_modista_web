@@ -30,7 +30,7 @@
                 </div>
                 <div class="campo-de-botones">
                     <div class="contenedor-input">
-                        <input class="boton" type="submit" value="Crear">
+                        <input class="boton" type="submit" value="Iniciar">
                     </div>
                     <div class="contenedor-input">
                         <input class="boton" type="reset" value="Cancelar">

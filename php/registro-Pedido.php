@@ -31,7 +31,7 @@ VALUES ('$idRopa','$nomRopa','$nomTela','$nomEmpleado','$nomCliente','$nomFechaC
 $resultado2 = mysqli_query($conexion,$consulta_1);
 
 if ($resultado2) {
-    echo " <script> alert('Se ha añadido al Usuario con exito.'); 
+    echo " <script> alert('Se ha añadido el Pedido con exito.'); 
     window.location='../layout/agre-medidas.php' </script>";
 }
 
