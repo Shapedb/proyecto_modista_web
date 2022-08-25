@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  error_reporting(0);
+  $varsesion = $_SESSION['usuario'];
+  if($varsesion==null || $varsesion='') {
+    echo " <script> alert('No tienes acceso.'); 
+    window.location='../index.php' </script>";
+    die();
+  }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -145,8 +155,14 @@
                         Editar / Agregar Medida
                       </a>
                     </li>
+                    <hr>
+                    <li>
+                      <a href="../php/cerrar.php" class="btn btn-danger">
+                        <div class="bi pe-none me-2" width="16" height="16"></div>
+                        Cerrar Sesion
+                      </a>
+                    </li>
                   </ul>
-                  <hr>
                   </div>
                 </div>
             </div>

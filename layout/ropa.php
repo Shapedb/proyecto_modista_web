@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  error_reporting(0);
+  $varsesion = $_SESSION['usuario'];
+  if($varsesion==null || $varsesion='') {
+    echo " <script> alert('No tienes acceso.'); 
+    window.location='../index.php' </script>";
+    die();
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

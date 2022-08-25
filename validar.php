@@ -1,7 +1,7 @@
 <?php
 
 include('php/database/conexion.php');
-
+session_start();
 $usuario=$_POST['usuario'];
 $contraseña=$_POST['password'];
 
@@ -16,7 +16,7 @@ $filas=mysqli_num_rows($resultado);
 
 if($filas){
 
-    echo " <script> alert('Se ha añadido al Usuario con exito.'); 
+    echo " <script> alert('Has iniciado con exito'); 
     window.location='layout/principal.php' </script>";
 
 
@@ -39,10 +39,11 @@ if($filas){
 <body >
     <!--Barra de Nacegacion-->
     <main class="body-l" >
-    
+
         <div class="" >
             <form class="formulario" action="validar.php" method="POST">
             <fieldset class="fieldset">
+                <legend class="legend">Error de Inicio</legend>
                 <legend class="legend">Iniciar Sesion</legend>
                 <div class="contenedor-input">
                     <label class="label" for="">Usuario:</label>
