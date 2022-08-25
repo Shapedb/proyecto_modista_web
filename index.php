@@ -7,17 +7,17 @@
     <!--Fuentes del Archivo-->
     <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet"> 
     <!--Hoja de Estilos Global-->
-    <link rel="stylesheet" href="../css/styles_global.css">
+    <link rel="stylesheet" href="css/styles_global.css">
     <!--Hoja de Estilos Barra de Navegacion En Linea-->
-    <link rel="stylesheet" href="../css/nav_unitario.css">
+    <link rel="stylesheet" href="css/nav_unitario.css">
     <title>Modista Rochy | Iniciar Sesion</title>
 </head>
 <body >
     <!--Barra de Nacegacion-->
-    <main class="body-l" action="validar.php" method="POST">
+    <main class="body-l" >
     
         <div class="" >
-            <form class="formulario" action="">
+            <form class="formulario" action="validar.php" method="POST">
             <fieldset class="fieldset">
                 <legend class="legend">Iniciar Sesion</legend>
                 <div class="contenedor-input">
@@ -40,8 +40,5 @@
         </form>
         </div>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>

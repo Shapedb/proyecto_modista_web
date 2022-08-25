@@ -29,31 +29,7 @@
               <h2 class="view-start">Modista Rochy</h2>
           </section>   
         </div>
-        <!------------------------------------------------------>
-        <div class="container marketing">
-      
-          <!-- Three columns of text below the carousel -->
-          <div class="row">
-            <div class="col-lg-4">
-
-              <h2 class="fw-normal">Citas</h2>
-              <p>¡Necesitas algo nuevo y unico que lucir! Agenda tu cita los mas rapido posible dentro del horario que mas se te acomode.</p>
-              <p><a class="btn btn-secondary" href="citas-customer.html">Crear cita &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-
-              <h2 class="fw-normal">Pedidos</h2>
-              <p>¿Esta terminado o siguimos preparandolo? Revisa la informacion del estado de tu pedido de manera instantanea.</p>
-              <p><a class="btn btn-secondary" href="pedidos-customer.html">Consultar &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-
-              <h2 class="fw-normal">Ubicación</h2>
-              <p>No sabes donde aun quienes somos y donde nos encontramos, da click para conocer mas sobre sus servicios de confianza.</p>
-              <p><a class="btn btn-secondary " href="nosotros-customer.html">Encuentranos &raquo;</a></p>
-            </div>
-          </div>
-      </main>
+      <!------------------------------------------------------>
       <!-- FOOTER -->
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">

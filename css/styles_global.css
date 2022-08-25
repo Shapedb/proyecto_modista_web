@@ -2,7 +2,7 @@
 :root {
     /*Variables mas usadas*/
     --color-nav: rgb(8 30 38 / 75%);
-    --fondo:  #FEEBE9;
+    --fondo:  #ec7163;
     --fondp-pagina: #EED180;
     --nav-base:  #0b0c0d;
     --blanco: #FFFFFF;
@@ -14,17 +14,7 @@
     --box-dark-grade: rgba(255, 255, 255, 0.7);
 }
 /*Global*/
-* {
-    margin: 0;
-}
-html {
-    font-size: 62.5%;
-}
-body {
-    font-size: 16px;
-    background-color: var(--fondp-pagina);
-    font-family: 'Oxygen', sans-serif;
-}
+
 
 /*Clases de uso universal*/
 .flex-column {
