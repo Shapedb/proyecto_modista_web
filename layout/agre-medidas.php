@@ -1,13 +1,4 @@
-<?php
-  session_start();
-  error_reporting(0);
-  $varsesion = $_SESSION['usuario'];
-  if($varsesion==null || $varsesion='') {
-    echo " <script> alert('No tienes acceso.'); 
-    window.location='../index.php' </script>";
-    die();
-  }
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +44,7 @@
                 <div class="col-lg-8">
                     <div class="input-group mb-4">
                         <span class="input-group-text" id="basic-addon1">Medida del <?php echo $mostrar1['M'] ?></span>
-                        <input type="text" name="txtNombreC" class="form-control" placeholder="Medida" aria-label="Nombre" aria-describedby="basic-addon1">
+                        <input type="text" name="txt" class="form-control" placeholder="Medida" aria-label="Nombre" aria-describedby="basic-addon1">
                     </div>
                 </div>
             </div>
