@@ -30,7 +30,7 @@
                     <th scope="col">Usuario</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Contraseña</th>
-                    <th scope="col">Eliminar</th>
+                    <th scope="col" colspan="2">Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,8 +50,9 @@
                     <td><?php echo $mostrar['USUARIO'] ?></td>
                     <td><?php echo $mostrar['TIPO'] ?></td>
                     <td><?php echo $mostrar['CONTRASENA'] ?></td>
-                    <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
-                        <td>
+                    <td><a href="editar-usuarios.php?id=<?php echo $mostrar['CVE_USUARIO']?>" class="btn btn-outline-success">Editar</a></td>
+                        <td>    
+                                
                                  <form action="../php/eliminar/usuario.php" method="POST">
                                     <input type="hidden" value="<?php echo $mostrar['CVE_USUARIO']?>" name="txtIDEM"readonly>
                                     <button type="submit" class="btn btn-outline-danger">Eliminar</button>

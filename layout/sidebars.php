@@ -101,12 +101,12 @@
                     <h1 class="fs-5">Pedidos</h1>
                     <li>
                       <a href="crear_pedido.php" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
                         Crear Pedido
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="nav-link text-white">
+                      <a href="mostrar_pedido.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
                         Listado Pedidos
                       </a>
@@ -121,7 +121,7 @@
                     </li>
                     <li>
                       <a href="#" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
                         Listado Citas
                       </a>
                     </li>
@@ -143,34 +143,24 @@
                     <h1 class="fs-5">Otros...</h1>
                     <li>
                       <a href="ropa.php" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                         Editar / Agregar Ropa
                       </a>
                     </li>
                     <li>
                       <a href="tela.php" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                         Editar / Agregar Tela
                       </a>
                     </li>
                     <li>
                       <a href="medida.php" class="nav-link text-white">
-                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                         Editar / Agregar Medida
                       </a>
                     </li>
                   </ul>
                   <hr>
-                  <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                      <strong>Name</strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                      <li><a class="dropdown-item" href="#">Perfil</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
-                    </ul>
                   </div>
                 </div>
             </div>
