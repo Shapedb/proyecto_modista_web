@@ -26,6 +26,7 @@
     <!--Fuentes-->
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/logo.png">
     <title>Document</title>
 </head>
 <body id="body">

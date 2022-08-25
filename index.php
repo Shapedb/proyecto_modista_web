@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles_global.css">
     <!--Hoja de Estilos Barra de Navegacion En Linea-->
     <link rel="stylesheet" href="css/nav_unitario.css">
-    <link rel="shortcut icon" href="img/logo.jpg">
+    <link rel="shortcut icon" href="img/logo.png">
     <title>Modista Rochy | Iniciar Sesion</title>
 </head>
 <body >
