@@ -59,7 +59,7 @@
                      ?>
                      <tr>
                         <td><?php echo $mostrar['MEDIDA'] ?></td>
-                        <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+
                         <td>
                                  <form action="../php/eliminar/medida.php" method="POST">
                                     <input type="hidden" value="<?php echo $mostrar['CVE_MEDIDA'] ?>" name="txtIDEM"readonly>
@@ -155,7 +155,7 @@
                      <tr>
                          <td><?php echo $mostrar['N'] ?></td>
                          <td><?php echo $mostrar['M'] ?></td>
-                         <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+
                          <td>
                                  
                                  <form action="../php/eliminar/tipo_ropa.php" method="POST">

@@ -58,7 +58,7 @@
                      ?>
                      <tr>
                          <td><?php echo $mostrar['NOMBRE'] ?></td>
-                         <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+                         
                         <td>
                                  <form action="../php/eliminar/ropa.php" method="POST">
                                     <input type="hidden" value="<?php echo $mostrar['CVE_TIPO_ROPA'] ?>" name="txtIM"readonly>

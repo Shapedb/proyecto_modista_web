@@ -59,7 +59,7 @@
                      ?>
                      <tr>
                         <td><?php echo $mostrar['TIPO_TELA'] ?></td>
-                        <td><input class="btn btn-outline-success" type="submit" value="Editar"></td>
+
                         <td>
                                  <form action="../php/eliminar/tela.php" method="POST">
                                     <input type="hidden" value="<?php echo $mostrar['CVE_TIPO_TELA'] ?>" name="txtIM"readonly>

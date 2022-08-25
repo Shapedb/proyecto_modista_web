@@ -26,13 +26,8 @@
 </head>
 <body id="body" class="body">
     <?php include('sidebars.php') ?>
-    <form action="../php/medida/registro-medida.php" method="POST">
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Agrega una Nueva Medida</span>
-                     <input placeholder="Nueva Medidas" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="txtMedi">
-                     <button type="submit" class="btn btn-primary">Agregar</button>
-                </div> 
-    </form>
+
+
     <h3>Pedido</h3>
     <?php
         $inc = include('../php/database/conexion.php');
