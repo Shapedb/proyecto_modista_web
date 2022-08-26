@@ -8,6 +8,8 @@ $inc = include('../database/conexion.php');
 
 $idM=$_POST['txtIDEM'];
 
+
+$consulta3 = "DELETE FROM `tipo_medida` WHERE CVE_MEDIDA = $idM;";
 $consulta2 = "DELETE FROM `tipo_medida` WHERE CVE_MEDIDA = $idM;";
 $consulta = "DELETE FROM `medidas` WHERE CVE_MEDIDA = $idM;";
 

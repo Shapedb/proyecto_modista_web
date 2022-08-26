@@ -29,7 +29,7 @@
     <h3>Piezas</h3>
     <?php
         $inc = include('../php/database/conexion.php');
-        $sql = "SELECT r.CVE_ROPA as ID, r.CLIENTE as CLIENTE, tr.NOMBRE as ROPA, tp.TIPO_TELA as TELA, R.FECHA_CREACION as CREACION, r.FECHA_ENTREGADO as ENTREGA, ep.NOMBRE as ESTADO, p.NOMBRE as EMPLEADO FROM `ropa` as r, `tipo_ropa` as tr, `tipo_de_tela` as tp, `empleado` as e, `estado_pedido` as ep, `personas` as p WHERE r.CVE_TIPO_ROPA = tr.CVE_TIPO_ROPA AND r.CVE_TIPO_TELA = tp.CVE_TIPO_TELA AND e.CVE_EMPLEADO = r.CVE_EMPLEADO AND ep.CVE_ESTADO_PEDIDO = r.CVE_ESTADO_PEDIDO AND p.CVE_PERSONA = e.CVE_EMPLEADO;";
+        $sql = "SELECT r.CVE_ROPA as ID, tr.NOMBRE as ROPA, tp.TIPO_TELA as TELA, R.FECHA_CREACION as CREACION, r.FECHA_ENTREGADO as ENTREGA, ep.NOMBRE as ESTADO, p.NOMBRE as EMPLEADO FROM `ropa` as r, `tipo_ropa` as tr, `tipo_de_tela` as tp, `empleado` as e, `estado_pedido` as ep, `personas` as p WHERE r.CVE_TIPO_ROPA = tr.CVE_TIPO_ROPA AND r.CVE_TIPO_TELA = tp.CVE_TIPO_TELA AND e.CVE_EMPLEADO = r.CVE_EMPLEADO AND ep.CVE_ESTADO_PEDIDO = r.CVE_ESTADO_PEDIDO AND p.CVE_PERSONA = e.CVE_EMPLEADO;";
         $resul = mysqli_query($conexion,$sql);
         
         
@@ -38,12 +38,7 @@
     ?>
     <div>
         <hr>
-        <div class="row mb-1">
-            <h5 class="col-lg-1 m-1">Cliente:</h5>
-            <p class="col-lg-8 m-1"><?php echo $mostrar['CLIENTE'] ?></p>
-        </div>
-        <hr>
-        <div class="row">
+        <div class="row">   
             <h5 class="col-lg-1 m-1">Ropa:</h5>
             <p class="col-lg-4 m-1"><?php echo $mostrar['ROPA'] ?></p>
             <h5 class="col-lg-1 m-1">Tela:</h5>

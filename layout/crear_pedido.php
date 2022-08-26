@@ -36,16 +36,6 @@
     
     <form action="../php/registro-Pedido.php" method="POST">
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <div class="input-group mb-4">
-                    <span class="input-group-text" id="basic-addon1">Nombre del Cliente</span>
-                    <input type="text" name="txtNombreC" class="form-control" placeholder="Nombre del Cliente" aria-label="Nombre" aria-describedby="basic-addon1">
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <div class="input-group mb-4">
