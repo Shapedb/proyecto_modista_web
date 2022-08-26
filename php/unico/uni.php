@@ -16,7 +16,7 @@ for ($i=0;$i<count($txt);$i++)
 }
 
 
-  if ($resultado2) {
+if ($resultado2) {
     echo " <script> alert('Se ha añadido el Pedido con exito.'); 
     window.location='../../layout/mostrar_pedido.php' </script>";
 }
