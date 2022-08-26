@@ -29,7 +29,7 @@
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-            <h4>Crear Pedidos</h4>
+            <h4>Crear Pieza para Pedidos</h4>
             <hr>
         </div>
     </div>
