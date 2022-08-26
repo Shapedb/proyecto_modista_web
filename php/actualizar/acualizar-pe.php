@@ -6,15 +6,9 @@ include('../database/conexion.php');
 
 
 $idropa = $_POST['cve'];
-$cliente = $_POST['txtnombre'];
-$ropa = $_POST['txtRopa'];
-$tela = $_POST['txtTela'];
-$fechac = $_POST['fc'];
-$fechae = $_POST['fe'];
-$epedido = $_POST['txtEpedido'];
-$ecargo = $_POST['txtEm'];
+$pedi = $_POST['txtEpedido'];
 
-$consulta_1 = "UPDATE `ropa` SET `CLIENTE`='hoLA' WHERE CVE_ROPA =  '$idropa'";
+$consulta_1 = "UPDATE `ropa` SET `CVE_ESTADO_PEDIDO`= '$pedi' WHERE CVE_ROPA =  '$idropa'";
 
 $io = mysqli_query($conexion,$consulta_1);
 
