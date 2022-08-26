@@ -93,7 +93,7 @@
         <div class="row">
             <div class="col-lg-2"><a href="editar-pedido.php?id=<?php echo $CVER?>" class="btn btn-outline-success ">Editar</a></div>
             <div class="col-lg-2">
-                <form action="../php/eliminar/usuario.php" method="POST">
+                <form action="../php/eliminar/pedido.php" method="POST">
                    <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
                    <button type="submit" class="btn btn-outline-danger ">Eliminar</button>
                 </form>
