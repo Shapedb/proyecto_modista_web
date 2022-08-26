@@ -22,7 +22,7 @@
     <!--Hoja de Estilo de Idex-Custome-->
     <link rel="stylesheet" href="../css/ropa.css">
     <link rel="shortcut icon" href="../img/logo.png">
-    <title>Crear Pedido | Modista</title>
+    <title>Agregar Pieza | Modista</title>
 </head>
 <body class="body" id="body">
     <?php include('sidebars.php') ?>

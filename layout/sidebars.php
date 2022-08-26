@@ -108,17 +108,17 @@
                       </a>
                     </li>
                     <hr>
-                    <h1 class="fs-5">Pedidos</h1>
+                    <h1 class="fs-5">Peticiones</h1>
                     <li>
                       <a href="crear_pedido.php" class="nav-link text-white">
                       <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                        Crear Pedido
+                        Añadir Pieza
                       </a>
                     </li>
                     <li>
                       <a href="mostrar_pedido.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                        Listado Pedidos
+                        Listado de Piezas
                       </a>
                     </li>
                     <hr>

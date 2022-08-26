@@ -65,6 +65,6 @@
         <div class="col-lg-1 mb-3">
             <button type="submit" class="btn btn-outline-success">Agregar</button>
         </div>
-    </form>
+    </for   m>
 </body>
 </html>
