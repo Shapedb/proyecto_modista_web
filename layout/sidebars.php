@@ -141,19 +141,19 @@
                     <li>
                       <a href="ropa.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                        Editar / Agregar Ropa
+                        Agregar Ropa
                       </a>
                     </li>
                     <li>
                       <a href="tela.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                        Editar / Agregar Tela
+                        Agregar Tela
                       </a>
                     </li>
                     <li>
                       <a href="medida.php" class="nav-link text-white">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                        Editar / Agregar Medida
+                        Agregar Medida
                       </a>
                     </li>
                     <hr>

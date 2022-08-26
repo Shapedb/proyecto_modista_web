@@ -1,0 +1,26 @@
+
+.body {
+    margin-left: 22rem !important;
+    margin-right: 22rem !important;
+    margin-top: 8rem !important;
+}
+#body .w-75 {
+    width: 1rem  10rem!important;
+}
+
+
+@media (max-width: 1200px){
+    .body {
+        margin-top: 6rem !important;
+        margin-left: 6rem !important;
+        margin-right: 6rem !important;
+    }
+}
+
+@media (max-width: 800px){
+    .body {
+        margin-top: 4rem !important;
+        margin-left: 4rem !important;
+        margin-right: 4rem !important;
+    }
+}
