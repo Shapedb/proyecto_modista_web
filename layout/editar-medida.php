@@ -30,9 +30,6 @@
 
 
         <h1>Editar Usuarios</h1>
-
-        <hr>
-        <form action="../php/actualizar/acualizar-pe.php" method="POST">
         <?php
             include('../php/database/conexion.php');
             $ido = $_GET["id"];
@@ -43,13 +40,11 @@
 
         ?>  
 
+        <hr>
+        <form action="../php/actualizar/actualizar-medidas.php" method="POST">
+
+
         <?php
-        $sql = "SELECT * FROM `ropa` WHERE CVE_ROPA = '$ido';";
-        $consul = mysqli_query($conexion,$sql);
-        $mostrar = mysqli_fetch_array($consul);
-        $holag = $mostrar['CVE_ROPA'];
-
-
 
         $sql15= "SELECT m.MEDIDA as M,mr.UNIDAD  as U, mr.CVE_MEDIDA as CM  FROM `medida_ropa` as mr, `medidas` as m WHERE m.CVE_MEDIDA = mr.CVE_MEDIDA AND mr.CVE_ROPA = '$holag';";
 
@@ -70,7 +65,7 @@
                 <div class="col-lg-8">
                     <div class="input-group mb-4">
                         <span class="input-group-text" id="basic-addon1">Medida del <?php echo $mostrar15['M'] ?></span>
-                        <input type="text" name="id[]" value="<?php echo $mostrar15['CM'] ?>" class="form-control" placeholder="Medida" aria-label="Nombre" aria-describedby="basic-addon1">
+                        <input type="hidden" name="id[]" value="<?php echo $mostrar15['CM'] ?>" class="form-control" placeholder="Medida" aria-label="Nombre" aria-describedby="basic-addon1">
                         <input type="text" name="txt[]" value="<?php echo $mostrar15['U'] ?>" class="form-control" placeholder="Medida" aria-label="Nombre" aria-describedby="basic-addon1">
                     </div>
                 </div>
@@ -80,7 +75,7 @@
             }
         ?>
         <div>
-            <input type="hidden" name="cve" value="<?php echo $cve ?>">
+            <input type="hidden" name="cve" value="<?php echo $ido ?>">
         </div>
         <div class="row">
             <div class="col-lg-6"></div>
