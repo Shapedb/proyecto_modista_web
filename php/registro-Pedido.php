@@ -21,8 +21,6 @@ if ($inc) {
 
 $nomRopa=$_POST['txtRopa'];
 $nomTela=$_POST['txtTela'];
-$nomFechaCreacion=$_POST['txtFeC'];
-$nomFechaEntrega=$_POST['txtFeC'];
 $nomEstadoP=$_POST['txtEpedido'];
 $nomEmpleado=$_POST['txtEm'];
 
@@ -30,8 +28,8 @@ $nomEmpleado=$_POST['txtEm'];
 
 /*Insertar Datos Personales*/
 
-$consulta_1 = "INSERT INTO `ropa`(`CVE_ROPA`, `CVE_TIPO_ROPA`, `CVE_TIPO_TELA`, `CVE_EMPLEADO`, `FECHA_CREACION`, `FECHA_ENTREGADO`, `CVE_ESTADO_PEDIDO`,`CVE_PEDIDO`)
-VALUES ('$idRopa','$nomRopa','$nomTela','$nomEmpleado','$nomFechaCreacion','$nomFechaEntrega','$nomEstadoP', '$idPe')";
+$consulta_1 = "INSERT INTO `ropa`(`CVE_ROPA`, `CVE_TIPO_ROPA`, `CVE_TIPO_TELA`, `CVE_EMPLEADO`, `CVE_ESTADO_PEDIDO`,`CVE_PEDIDO`)
+VALUES ('$idRopa','$nomRopa','$nomTela','$nomEmpleado','$nomEstadoP', '$idPe')";
 
 
 $resultado2 = mysqli_query($conexion,$consulta_1);

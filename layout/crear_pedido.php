@@ -82,23 +82,6 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <div class="input-group mb-4">
-                        <span class="input-group-text" id="basic-addon1">Fecha de Creación</span>
-                        <input type="datetime-local" name="txtFeC" class="form-control" placeholder="Telefono" aria-label="Telefono" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <?php ?>
-                <div class="col-lg-4">
-                    <div class="input-group mb-4">
-                        <span class="input-group-text" id="basic-addon1">Fecha de Entrega</span>
-                        <input type="datetime-local" name="txtFeE" class="form-control" placeholder="Correo Electronico" aria-label="Correo Electronico" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-                <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <div class="input-group mb-4">
                     <label class="input-group-text" for="inputGroupSelect01">Estado del Pedido </label>
                     <select class="form-select" id="inputGroupSelect01" name="txtEpedido">
                         
