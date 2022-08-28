@@ -41,7 +41,7 @@ if ($rowcount < $c){
 }
 else {
     echo " <script> alert('Se ha termina con exito.'); 
-    window.location='../../layout/mostrar_pedido.php' </script>";
+    window.location='../../layout/agendar_mostrar.php' </script>";
 }
 
 ?>
