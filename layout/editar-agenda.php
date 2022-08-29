@@ -47,7 +47,7 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                         <span class="input-group-text" id="basic-addon1">Nombre del Cliente</span>
-                        <input type="number" min="0.00" max="10000.00" step="0.01" name="txtNombre" value="<?php echo $mostrarp['CLIENTE'] ?>" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+                        <input type="txt" name="txtNombre" value="<?php echo $mostrarp['CLIENTE'] ?>" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
                     </div>
                 </div>
 
