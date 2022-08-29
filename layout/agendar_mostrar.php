@@ -99,7 +99,7 @@
                 <div><a href="editar-agenda.php?id=<?php echo $CVER?>" class="btn btn-outline-success ">Editar Pedidos</a></div>
             </div>
             <div class="col-lg-3">
-                <form action="editar-agenda.php" method="GET">
+                <form action="mostrar_pedido.php" method="GET">
                    <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
                    <button type="submit" class="btn btn-outline-success">Ver Piezas</button>
                 </form>
