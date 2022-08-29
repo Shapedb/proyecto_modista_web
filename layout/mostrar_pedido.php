@@ -30,10 +30,7 @@
     <h3>Piezas</h3>
     <div class="row">
         <div class="col-lg-3 mb-1">
-            <form action="../php/eliminar/agendar.php" method="POST">
-               <input type="hidden" value="<?php $op ?>" name="txtIDEM"readonly>
-               <button type="submit" class="btn btn-outline-danger ">Añadir Pieza</button>
-            </form>
+            <a href="añadir_pieza.php?idp=<?php echo $op?>" class="btn btn-outline-dark">Añadir Pieza</a>
         </div>
         <div class="col-lg-1 mb-1">
             <a href="agendar_mostrar.php" class="btn btn-outline-success ">Regresar</a>

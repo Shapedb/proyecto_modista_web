@@ -23,7 +23,7 @@ VALUES ('$idPe','$pedido','$cantidad','$fechaC','$fechaE','$cliente')";
 $resultado=mysqli_query($conexion,$consulta_1);
 
 if ($resultado) {
-    echo " <script> alert('Se ha añadido al Usuario con exito.'); 
+    echo " <script> alert('Se ha añadido el pedido con exito.'); 
     window.location='../layout/crear_pedido.php' </script>";
 }
 

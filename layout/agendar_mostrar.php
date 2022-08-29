@@ -96,13 +96,10 @@
         <hr>
         <div class="row">
             <div class="col-lg-3">
-                <form action="../php/eliminar/agendar.php" method="POST">
-                   <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
-                   <button type="submit" class="btn btn-outline-success ">Editar Pedido</button>
-                </form>
+                <div><a href="editar-agenda.php?id=<?php echo $CVER?>" class="btn btn-outline-success ">Editar Pedidos</a></div>
             </div>
             <div class="col-lg-3">
-                <form action="mostrar_pedido.php" method="GET">
+                <form action="editar-agenda.php" method="GET">
                    <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
                    <button type="submit" class="btn btn-outline-success">Ver Piezas</button>
                 </form>

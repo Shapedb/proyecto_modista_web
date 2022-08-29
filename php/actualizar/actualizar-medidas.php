@@ -22,7 +22,7 @@ for ($i=0;$i<count($idm);$i++)
 
 
 if ($resultado2) {
-    echo " <script> alert('Se ha añadido el Pedido con exito.'); 
+    echo " <script> alert('Se ha actualizado con exito.'); 
     window.location='../../layout/mostrar_pedido.php' </script>";
 }
 
