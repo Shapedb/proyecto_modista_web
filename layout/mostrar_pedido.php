@@ -25,11 +25,25 @@
 
 </head>
 <body id="body" class="body">
-    <?php include('sidebars.php') ?>
+    <?php include('sidebars.php');
+    $op = $_GET["txtIDEM"];?>
     <h3>Piezas</h3>
+    <div class="row">
+        <div class="col-lg-3 mb-1">
+            <form action="../php/eliminar/agendar.php" method="POST">
+               <input type="hidden" value="<?php $op ?>" name="txtIDEM"readonly>
+               <button type="submit" class="btn btn-outline-danger ">Añadir Pieza</button>
+            </form>
+        </div>
+        <div class="col-lg-1 mb-1">
+            <a href="agendar_mostrar.php" class="btn btn-outline-success ">Regresar</a>
+        </div>
+    </div>
+
     <?php
+        $op = $_GET["txtIDEM"];
         $inc = include('../php/database/conexion.php');
-        $sql = "SELECT r.CVE_ROPA as ID, tr.NOMBRE as ROPA, tp.TIPO_TELA as TELA,  ep.NOMBRE as ESTADO, p.NOMBRE as EMPLEADO FROM `ropa` as r, `tipo_ropa` as tr, `tipo_de_tela` as tp, `empleado` as e, `estado_pedido` as ep, `personas` as p WHERE r.CVE_TIPO_ROPA = tr.CVE_TIPO_ROPA AND r.CVE_TIPO_TELA = tp.CVE_TIPO_TELA AND e.CVE_EMPLEADO = r.CVE_EMPLEADO AND ep.CVE_ESTADO_PEDIDO = r.CVE_ESTADO_PEDIDO AND p.CVE_PERSONA = e.CVE_EMPLEADO;";
+        $sql = "SELECT r.CVE_ROPA as ID, tr.NOMBRE as ROPA, tp.TIPO_TELA as TELA, ep.NOMBRE as ESTADO, p.NOMBRE as EMPLEADO FROM `ropa` as r, `tipo_ropa` as tr, `tipo_de_tela` as tp, `empleado` as e, `estado_pedido` as ep, `personas` as p WHERE r.CVE_TIPO_ROPA = tr.CVE_TIPO_ROPA AND r.CVE_TIPO_TELA = tp.CVE_TIPO_TELA AND e.CVE_EMPLEADO = r.CVE_EMPLEADO AND ep.CVE_ESTADO_PEDIDO = r.CVE_ESTADO_PEDIDO AND p.CVE_PERSONA = e.CVE_EMPLEADO AND R.CVE_PEDIDO = '$op'; ;";
         $resul = mysqli_query($conexion,$sql);
         
         
@@ -77,8 +91,9 @@
             <div class="col-lg-3"><a href="editar-medida.php?id=<?php echo $CVER?>" class="btn btn-outline-success ">Editar Medidas</a></div>
             <div class="col-lg-2">
                 <form action="../php/eliminar/pedido.php" method="POST">
-                   <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
-                   <button type="submit" class="btn btn-outline-danger ">Eliminar</button>
+                    <input type="hidden" value="<?php echo $op?>" name="idP"readonly>
+                    <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
+                    <button type="submit" class="btn btn-outline-danger ">Eliminar</button>
                 </form>
             </div>
         </div>

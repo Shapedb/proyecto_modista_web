@@ -41,8 +41,8 @@
         <div class="row">   
             <h5 class="col-lg-1 m-1">Cliente:</h5>
             <p class="col-lg-4 m-1"><?php echo $mostrar['CLIENTE'] ?></p>
-            <h5 class="col-lg-1 m-1">Estado Actual:</h5>
-            <p class="col-lg-4 m-1"><?php echo $mostrar['Estado'] ?></p>
+            <h5 class="col-lg-3 m-1">Estado Actual:</h5>
+            <p class="col-lg-3 m-1"><?php echo $mostrar['Estado'] ?></p>
         </div>
         <hr>
         <div class="row">
@@ -95,8 +95,18 @@
         ?>
         <hr>
         <div class="row">
-            <div class="col-lg-3"><a href="editar-pedido.php?id=<?php echo $CVER?>" class="btn btn-outline-success ">Editar Pedido</a></div>
-            <div class="col-lg-3"><a href="editar-medida.php?id=<?php echo $CVER?>" class="btn btn-outline-success ">Ver Piezas</a></div>
+            <div class="col-lg-3">
+                <form action="../php/eliminar/agendar.php" method="POST">
+                   <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
+                   <button type="submit" class="btn btn-outline-success ">Editar Pedido</button>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                <form action="mostrar_pedido.php" method="GET">
+                   <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
+                   <button type="submit" class="btn btn-outline-success">Ver Piezas</button>
+                </form>
+            </div>
             <div class="col-lg-2">
                 <form action="../php/eliminar/agendar.php" method="POST">
                    <input type="hidden" value="<?php echo $CVER?>" name="txtIDEM"readonly>
