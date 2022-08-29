@@ -35,7 +35,7 @@
             include('../php/database/conexion.php');
             $op = $_GET['id'];
             $inc = include('../php/database/conexion.php');
-            $sql = "SELECT p.CVE_PEDIDO as ID, e.NOMBRE as Estado, p.CANTIDAD as Cant, p.FECHA_CREACION as FC, p.FECHA_ENTREGADO as FP, p.CLIENTE as CLIENTE FROM `pedido` AS p, `estado` as e WHERE e.CVE_ESTADO = p.CVE_ESTADO AND p.CVE_PEDIDO = $op; ";
+            $sql = "SELECT p.CVE_PEDIDO as ID, e.NOMBRE as Estado, p.CANTIDAD as Cant, p.FECHA_CREACION as FC, p.FECHA_ENTREGADO as FP, p.CLIENTE as CLIENTE, p.PRECIO as PRECIO  FROM `pedido` AS p, `estado` as e WHERE e.CVE_ESTADO = p.CVE_ESTADO AND p.CVE_PEDIDO = $op; ";
             $resul = mysqli_query($conexion,$sql);
             $mostrarp = mysqli_fetch_array($resul);
         ?>  
@@ -47,7 +47,7 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                         <span class="input-group-text" id="basic-addon1">Nombre del Cliente</span>
-                        <input type="text" name="txtNombre" value="<?php echo $mostrarp['CLIENTE'] ?>" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+                        <input type="number" min="0.00" max="10000.00" step="0.01" name="txtNombre" value="<?php echo $mostrarp['CLIENTE'] ?>" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
                     </div>
                 </div>
 
@@ -97,7 +97,15 @@
                         <input type="datetime-local" name="txtFechaE" value="<?php echo $mostrarp['FP'] ?>" class="form-control" placeholder="Correo Electronico" aria-describedby="basic-addon1">
                     </div>
                 </div>
-            </div>    
+            </div>
+            <div class=" row mb-3">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                    <span class="input-group-text" id="basic-addon1">Precio</span>
+                    <input type="text" name="txtPrecio" value="<?php echo $mostrarp['PRECIO'] ?>" class="form-control" placeholder="Precio" aria-label="Nombre" aria-describedby="basic-addon1">
+                </div>
+            </div> 
+              
 
                 <div class="row">
                     <div class="col-lg-2"></div>
@@ -108,6 +116,7 @@
                         <button type="reset" class="btn btn-outline-danger">Cancelar</button>
                     </div>
                 </div>
+                
             
     </form>
 </body>

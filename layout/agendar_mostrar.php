@@ -29,7 +29,7 @@
     <h3>Pedidos</h3>
     <?php
         $inc = include('../php/database/conexion.php');
-        $sql = "SELECT p.CVE_PEDIDO as ID, e.NOMBRE as Estado, p.CANTIDAD as Cant, p.FECHA_CREACION as FC, p.FECHA_ENTREGADO as FP, p.CLIENTE as CLIENTE FROM `pedido` AS p, `estado` as e WHERE e.CVE_ESTADO = p.CVE_ESTADO; ";
+        $sql = "SELECT p.CVE_PEDIDO as ID, e.NOMBRE as Estado, p.CANTIDAD as Cant, p.FECHA_CREACION as FC, p.FECHA_ENTREGADO as FP, p.CLIENTE as CLIENTE, p.PRECIO as PRECIO FROM `pedido` AS p, `estado` as e WHERE e.CVE_ESTADO = p.CVE_ESTADO; ";
         $resul = mysqli_query($conexion,$sql);
         
 
@@ -58,6 +58,11 @@
         <div class="row">
             <h5 class="col-lg-2 m-1">Fecha de Entrega:</h5>
             <p class="col-lg-4 m-1"><?php echo $mostrar['FP'] ?>
+        </div>
+        <hr>
+        <div class="row">   
+            <h5 class="col-lg-1 m-1">Precio:</h5>
+            <p class="col-lg-4 m-1"><?php echo $mostrar['PRECIO'] ?></p>
         </div>
         <hr>
         <h5>Medidas</h5>

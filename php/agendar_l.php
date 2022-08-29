@@ -15,10 +15,10 @@ $pedido = $_POST['txtEP'];
 $cantidad = $_POST['txtCantidad'];
 $fechaC = $_POST['txtFechaC'];
 $fechaE = $_POST['txtFechaE'];
+$precio = 0;
 
-
-$consulta_1 = "INSERT INTO `pedido`(`CVE_PEDIDO`, `CVE_ESTADO`, `CANTIDAD`, `FECHA_CREACION`, `FECHA_ENTREGADO`, `CLIENTE`) 
-VALUES ('$idPe','$pedido','$cantidad','$fechaC','$fechaE','$cliente')";
+$consulta_1 = "INSERT INTO `pedido`(`CVE_PEDIDO`, `CVE_ESTADO`, `CANTIDAD`, `FECHA_CREACION`, `FECHA_ENTREGADO`, `CLIENTE`, `PRECIO`) 
+VALUES ('$idPe','$pedido','$cantidad','$fechaC','$fechaE','$cliente','$precio')";
 
 $resultado=mysqli_query($conexion,$consulta_1);
 
